@@ -110,7 +110,7 @@ function Navbar(props) {
             <button
               className="contact-btn"
               onClick={() => {
-                window.location.href = "mailto:sinhahritik007@gmail.com";
+                window.location.href = "mailto:officialdkr007@gmail.com";
               }}
             >
               Hire Me
