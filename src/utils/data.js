@@ -69,12 +69,12 @@ export const SKILLS = [
 export const WORK_EXPERIENCE = [
     {
         title: "Associate Software Engineer at Accenture Solutions Private Limited",
-        date: "October 2023 - Present",
+        date: "December 2023 - Present",
         responsibilities: [
             "Front-end development for the Minecraft Project, focusing on user interface design and interaction.",
-            "Implementing validation protocols for data integrity and application reliability.",
-            "Collaborating with teams to align front-end design with project goals.",
-            "Using modern frameworks and technologies for feature deployment and maintainability."
+            "Implemented validation protocols for data integrity and application reliability.",
+            "Collaborated with teams to align front-end design with project goals.",
+            "Used modern frameworks and technologies for feature deployment and maintainability."
             
         ]
     },
@@ -82,21 +82,21 @@ export const WORK_EXPERIENCE = [
         title: "Data Analyst Intern at Highradius Pvt Ltd",
         date: "June 2022 - September 2022",
         responsibilities: [
-            "Applying Machine Learning algorithms to extract detailed insights from extensive datasets.",
-            "Performing Exploratory Data Analysis to find patterns and correlations.",
-            "Processing data for Machine Learning models and predictive analytics.",
-            "Testing and validating model performance for accuracy and reliability."
+            "Applied Machine Learning algorithms to extract detailed insights from extensive datasets.",
+            "Performed Exploratory Data Analysis to find patterns and correlations.",
+            "Processed data for Machine Learning models and predictive analytics.",
+            "Tested and validated model performance for accuracy and reliability."
           
         ]
     },
     {
         title: "Trainee in Spring Boot Java at Accenture Solutions Private Ltd",
-        date: "October 2022 - December 2022",
+        date: "October 2023 - December 2022",
         responsibilities: [
-            "Delivering projects in Spring Boot and Java, demonstrating full-stack development skills.",
-            "Implementing backend solutions with Spring Boot's core concepts.",
-            "Collaborating in coding practices to maintain high code standards.",
-            "Engaging in learning initiatives for the latest Java framework trends."    
+            "Delivered projects in Spring Boot and Java, demonstrating full-stack development skills.",
+            "Implemented backend solutions with Spring Boot's core concepts.",
+            "Collaborated in coding practices to maintain high code standards.",
+            "Engaged in learning initiatives for the latest Java framework trends."    
 
         ],
     },
