@@ -1,62 +1,18 @@
-// import React from "react";
-// import './App.css' ;
-// import Navbar from "./components/Navbar/Navbar";
-// import Hero from "./components/Hero/Hero";
-// import Skills from "./components/Skills/Skills";
-// import WorkExperience from "./components/WorkExperience/WorkExperience";
-// import ContactMe from "./components/ContactMe/ContactMe";
-// import Footer from "./components/Footer/Footer";
-// import { BrowserRouter,Routes, Route } from "react-router-dom";
-// const App = () => {
-//     return (
-
-//         <>
-//         <Navbar />
-//         <div className="container">
-//         <Hero />
-//         <Skills />
-//         <WorkExperience />
-//         <ContactMe />
-//         </div>
-//         <Footer />
-
-//        </>
-//     )
-// }
-
-// export default App;
-
 import React, { useRef } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Skills from "./components/Skills/Skills";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
+import Projects from "./components/Projects/Projects";
 import ContactMe from "./components/ContactMe/ContactMe";
 import Footer from "./components/Footer/Footer";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-// const App = () => {
-//     return (
-//         <Router>
-//             <Navbar />
-//             <div className="container">
-//                 <Routes>
-//                     <Route path="/" element={<Hero />} />
-//                     <Route path="/skills" element={<Skills />} />
-//                     <Route path="/workexperience" element={<WorkExperience />} />
-//                     <Route path="/contactme" element={<ContactMe />} />
-//                 </Routes>
-//             </div>
-//             <Footer />
-//         </Router>
-//     )
-// }
 
 const App = () => {
   const heroRef = useRef();
   const skillRef = useRef();
   const workRef = useRef();
+  const projectRef = useRef();
   const contactRef = useRef();
 
   const handleHeroClick = () => {
@@ -80,6 +36,14 @@ const App = () => {
       inline: "nearest",
     });
   };
+
+  const handleProjectClick = () => {
+    projectRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "nearest",
+    });
+  };
   const handleWorkClick = () => {
     workRef.current?.scrollIntoView({
       behavior: "smooth",
@@ -92,6 +56,7 @@ const App = () => {
       <Navbar
         handleHeroClick={handleHeroClick}
         handleSkillClick={handleSkillClick}
+        handleProjectClick={handleProjectClick}
         handleContactClick={handleContactClick}
         handleWorkClick={handleWorkClick}
       />
@@ -104,6 +69,9 @@ const App = () => {
         </div>
         <div ref={workRef}>
           <WorkExperience />
+        </div>
+        <div ref={projectRef}>
+          <Projects />
         </div>
         <div ref={contactRef}>
           <ContactMe />

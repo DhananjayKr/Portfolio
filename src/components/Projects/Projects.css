@@ -1,0 +1,126 @@
+.projects {
+  padding: 20px;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+i {
+  font-size: 0.8rem;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  gap: 20px; /* Add some space between text and image */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 2px solid #292d37;
+  margin: 0.5rem 10rem;
+}
+
+.project-item a {
+  flex-grow: 1;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.project-item:hover a {
+  color: #47b8ff;
+}
+
+.project-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.project-list {
+  max-height: 370px; /* Adjust height to display exactly two items */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px; /* Extra padding for scrollbar clearance */
+  border-radius: 10px;
+  border: 1.5px solid #6852ba;
+  transition: all 0.3s ease;
+}
+
+/* Custom Scrollbar Styling */
+.project-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.project-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.project-list::-webkit-scrollbar-thumb {
+  background-color: #6852ba;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+/* Custom Scrollbar Styling for Firefox */
+.project-list {
+  scrollbar-width: thin;
+  scrollbar-color: #6852ba #161515;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .project-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .project-item a {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  .project-list {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-item {
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto;
+  }
+
+  .project-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .project-item a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .project-item a {
+    margin-left: 10rem;
+  }
+
+  .project-image {
+    margin-right: 10rem;
+  }
+}
