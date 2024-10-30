@@ -24,7 +24,7 @@ i {
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   border-radius: 10px;
   transition: all 0.3s ease;
-  border: 2px solid #292d37;
+  border: 2px solid #6852ba;
   margin: 0.5rem 10rem;
 }
 
